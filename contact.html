@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    
+    <link rel="stylesheet" href="style_lab2.css">
+
+    <!-- Link iconify -->
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</head>
+<body>
+    <header>
+        <h2>Hello, this is my personal website</h2>
+
+        <nav>
+            <ul class="button-container">
+                <li><a href="about.html" class="infinity-button">About me</a></li>
+                <li><a href="random_image_cat.html" class="infinity-button">Random Image Cat</a></li>
+                <li><a href="contact.html" class="infinity-button">Contact me</a></li>
+                <li><a href="friends.html" class="infinity-button">My friends</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        
+        <section class="container">
+            <section class="text-section">
+                <h1>Contact me</h1>
+            </section>
+            <form action="/action_page.php">
+                <!-- <label for="name">Name:</label> <br> -->
+                <input type="text" placeholder="Name" id="name" required ><br>
+                <input type="text" name="email" id="email" placeholder="Email address" required><br>
+                <input type="text" name="subject" id="subject" placeholder="Subject" required><br>
+                <textarea type="text" name="message" id="message" placeholder="Your message" required></textarea><br>
+                <!-- <input type="button" value="Send Message" class="button_2"><br> -->
+                 <button type="submit" class="button">Send message</button>
+            </form>
+        </section>
+
+        <section class="social-section">
+            <ul class="social-links">
+                <li><a href="#"><span class="iconify" data-icon="mdi:twitter" data-inline="false"></span> </a></li>
+                <li><a href="#"><span class="iconify" data-icon="mdi:facebook" data-inline="false"></span> </a></li>
+                <li><a href="#"><span class="iconify" data-icon="mdi:google-plus" data-inline="false"></span> </a></li>
+                <li><a href="#"><span class="iconify" data-icon="mdi:pinterest" data-inline="false"></span> </a></li>
+                <li><a href="#"><span class="iconify" data-icon="mdi:tumblr" data-inline="false"></span> </a></li>
+            </ul>
+        </section>
+        
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 My website</p>
+    </footer>
+    
+</body>
+</html>

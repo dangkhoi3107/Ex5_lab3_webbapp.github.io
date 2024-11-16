@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Set the body */
+body {
+    font-family: Arial, sans-serif;
+
+    /* let body become a container in flexible box, easy to modify elms */
+    display: flex; 
+
+    flex-direction: column;
+    /* make elms to col. */
+
+    align-items: center;
+
+    justify-content: center;
+    /* make sure the elms become in the center of the screen.; */
+
+    /* height: 100vh; */
+    /* 100vh : 100% of the WEBSITE. */
+
+    background-color: lightgrey;
+    padding: 20px;
+}
+
+
+
+header h2 {
+    margin-bottom: 20vh;
+}
+
+.button-container {
+    list-style-type: none;
+    display: flex;
+    
+    position: relative;
+    /* Let child elms locate in this container. 
+    neccessary for absolute locate buttons in list */
+
+    /* justify-content: center; */
+    margin-bottom: 30px;
+    width: 400px;
+    height: 200px;
+
+}
+
+.infinity-button {
+    padding: 10px 20px;
+    border: 2px solid #5dade2;
+    background-color: #2e86c1;
+    color: white;
+    /* color of character */
+
+    border-radius: 8px;
+    font-size: 1.1em;
+    cursor: pointer;
+    /* transition: all 2s ease; */
+
+}
+.infinity-button:hover {
+    background-color: #1b4f72;
+    border-color: #1b4f72;
+    
+}
+
+.button-container li {
+    position: absolute;
+    animation: moveInfinity 8s infinite;
+    animation-play-state: running;
+}
+
+.button-container li:hover {
+    animation-play-state:paused;
+}
+
+/* Set the delay time  for button animation */
+.button-container li:nth-child(1) {
+    animation-delay: 0s;
+}
+.button-container li:nth-child(2) {
+    animation-delay: 2s;
+}
+.button-container li:nth-child(3) {
+    animation-delay: 4s;
+}
+.button-container li:nth-child(4) {
+    animation-delay: 6s;
+}
+
+
+@keyframes moveInfinity {
+    0%, 100% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(100px, 100px);
+    }
+    40% {
+        transform: translate(200px, 0);
+    }
+    60% {
+        transform: translate(100px, -100px);
+    }
+    80% {
+        transform: translate(0, -50px);
+    }
+}
+
+
+.blog_post {
+    margin: 20px 0;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+
+}
+.blog_post h2 {
+    color: #d35400;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+}
+
+.blog_post p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.blog_post img {
+    display: block;
+    margin: 0 auto;
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+
+}
+
+.container {
+    display: flex;
+    /* Flex will make elms to be horizontal */
+    justify-content: space-between; 
+    /* Make sure that there a space between elems in container (text & image) */
+    align-items: center;
+    padding: 50 px;
+    max-width: 1200 px;
+    /* Without set max-width: the content will spread all the website */
+    margin: 0 auto;
+}
+.text-section {
+    flex: 1;
+    /* flex:1 : set the width of text-section for 1 scalar, 
+    without it the text will spread all the place */
+    margin-right: 20px;
+}
+
+.text-section h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+
+}
+.text-section p {
+    font-size: 30px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.button_2 {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.image-section {
+    flex :1;
+    text-align: right;
+}
+
+.image-section img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: #5dade2;
+}
+.button:hover {
+    background-color: #1b4f72;
+}
+
+.container form input, textarea {
+    /* flex: 1; */
+    padding: 20px;
+    border-radius: 8px;
+    margin: 5px;
+    /* margin-left: 40px; */
+}
+
+.social-section {
+    margin-top: 50px;
+}
+
+.social-section p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links li a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.iconify {
+    font-size: 32px; /* Đặt kích thước cho biểu tượng */
+    color: #1da1f2; /* Ví dụ: màu xanh của Twitter */
+    margin-right: 8px; /* Thêm khoảng cách giữa icon và text */
+}
+
+/* Footer */
+footer {
+    
+}
+
